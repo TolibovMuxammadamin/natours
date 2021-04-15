@@ -1,0 +1,184 @@
+/* 
+
+  primary-color: #55c57a;
+  secondary-color: #7ed56f;
+  primary-dark-color: #28b485;
+*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #777;
+}
+
+.main {
+  padding: 25px;
+}
+
+.header {
+  height: calc(100vh - 30px);
+  background-image: url(/img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+}
+
+.header__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  opacity: 0.8;
+}
+
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.logo .logo__img {
+  height: 32px;
+}
+.header__block {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header__text {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 50px;
+  line-height: 1.28;
+}
+
+.header__text--title {
+  display: inline-block;
+  font-size: 54px;
+  letter-spacing: 32px;
+  animation: moveInRight 1s ease-out;
+}
+
+.header__text--subtitle {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 16px;
+  font-weight: 700;
+  animation: moveInLeft 1s ease-out;
+}
+
+.btn {
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.btn--white {
+  color: #777;
+  background-color: #fff;
+}
+
+.btn--animated {
+  animation: moveInTop .5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn--animated::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--white.btn--animated::after {
+  background-color: #fff;
+}
+
+.btn--animated:hover::after {
+  transform: scale(1.4);
+  opacity: 0;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  75% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
