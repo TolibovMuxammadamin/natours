@@ -4,14 +4,14 @@
   
   
 */
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
 
-$primary-color: #55c57a;
-$secondary-color: #7ed56f;
-$primary-dark-color: #28b485;
-
-$black-color: #000;
-$white-color: #fff;
-$grey-color: #777;
+$color-black: #000;
+$color-white: #fff;
+$color-grey-dark: #777;
 
 @mixin absoluteCenter ($top: 50%, $left: 50%) {
   position: absolute;
@@ -21,7 +21,7 @@ $grey-color: #777;
 }
 
 ::selection {
-  background-color: $primary-color;
+  background-color: $color-primary;
 }
 
 *,
@@ -44,7 +44,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: $grey-color;
+  color: $color-grey-dark;
   line-height: 1.7;
   padding: 30px;
 }
@@ -52,7 +52,7 @@ body {
 .header {
   height: 95vh;
   background-image:
-    linear-gradient(to right bottom, rgba($secondary-color, 0.8), rgba($primary-dark-color, 0.8)),
+    linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
     url(/img/hero.jpg);
   background-size: cover;
   background-position: top;
@@ -76,7 +76,7 @@ body {
 }
 
 .heading-primary {
-  color: $white-color;
+  color: $color-white;
   text-transform: uppercase;
   margin-bottom: 60px;
   backface-visibility: hidden;
@@ -110,20 +110,20 @@ body {
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba($black-color, 0.2);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
   }
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba($black-color, 0.2);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
   }
 
   &--white {
-    background-color: $white-color;
-    color: $grey-color;
+    background-color: $color-white;
+    color: $color-grey-dark;
 
     &::after {
-      background-color: $white-color;
+      background-color: $color-white;
     }
   }
 
