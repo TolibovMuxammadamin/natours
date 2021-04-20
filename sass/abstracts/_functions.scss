@@ -1,0 +1,3 @@
+@function calcColumnWidth ($columnNumber) {
+  @return calc(#{$columnNumber} * 100% / 12);
+}

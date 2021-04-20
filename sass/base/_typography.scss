@@ -1,21 +1,28 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: $color-grey-dark;
+  line-height: 1.7;
+}
+
+
 .heading-primary {
   text-transform: uppercase;
   color: $color-white;
-  margin-bottom: 60px;
-}
+  margin-bottom: 6rem;
 
-.heading-primary--main {
-  display: block;
-  font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 35px;
-  animation: moveInRight 1s ease-out;
-}
+  &--main {
+    display: block;
+    font-weight: 400;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation: moveInRight 1s ease-out;
+  }
 
-.heading-primary--sub {
-  display: block;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 17.5px;
-  animation: moveInLeft 1s ease-out;
+  &--sub {
+    display: block;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+    animation: moveInLeft 1s ease-out;
+  }
 }
