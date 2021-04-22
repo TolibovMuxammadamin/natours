@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TolibovMuxammadamin/natours.git"
+  },
+  "author": "Muxammadamin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TolibovMuxammadamin/natours/issues"
+  },
+  "homepage": "https://github.com/TolibovMuxammadamin/natours#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
