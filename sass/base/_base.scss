@@ -8,6 +8,11 @@ html {
   box-sizing: border-box;
 }
 
+*:focus,
+*:active {
+  outline: none;
+}
+
 body {
   padding: 30px;
 }
