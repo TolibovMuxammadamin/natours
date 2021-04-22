@@ -12,3 +12,8 @@ html {
 body {
   padding: 3rem;
 }
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
