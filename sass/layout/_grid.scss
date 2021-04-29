@@ -10,8 +10,8 @@
 }
 
 [class^="col"] {
-  background-color: orangered;
-  color: #fff;
+  // background-color: orangered;
+  // color: #fff;
 
   &:not(:last-child) {
     margin-right: $gutter-horizontal;
