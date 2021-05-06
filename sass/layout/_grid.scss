@@ -4,12 +4,15 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
 }
 
 [class^="col-"] {
   &:not(:last-child) {
     margin-right: $gutter-horizontal;
-    margin-bottom: $gutter-vertical;
   }
 }
 
